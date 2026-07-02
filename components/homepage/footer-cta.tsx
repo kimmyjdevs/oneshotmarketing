@@ -26,12 +26,12 @@ export function FooterCTA() {
         </p>
 
         <div className="mt-20 pt-10 border-t border-teal flex flex-col sm:flex-row items-center justify-center gap-8 text-[13px] text-muted/60">
-          <span>Other services from One Shot Marketing:</span>
+          <span>More from One Shot Marketing:</span>
           <div className="flex gap-6">
-            <Link href="/#services" className="hover:text-accent transition-colors">Strategy</Link>
-            <Link href="/#services" className="hover:text-accent transition-colors">Consulting</Link>
-            <Link href="/#services" className="hover:text-accent transition-colors">Audits</Link>
-            <Link href="/#portfolio" className="hover:text-accent transition-colors">Portfolio</Link>
+            <Link href="/services#marketing-strategy" className="hover:text-accent transition-colors">Strategy</Link>
+            <Link href="/services#business-planning" className="hover:text-accent transition-colors">Consulting</Link>
+            <Link href="/services#social-media-audit" className="hover:text-accent transition-colors">Audits</Link>
+            <Link href="/services" className="hover:text-accent transition-colors">All Services</Link>
           </div>
         </div>
       </div>

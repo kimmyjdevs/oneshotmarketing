@@ -7,7 +7,7 @@ import { LogoIcon } from '@/components/logo-icon'
 
 const links = [
   { label: 'Portfolio', href: '/#portfolio' },
-  { label: 'What We Do', href: '/#services' },
+  { label: 'Services', href: '/services' },
   { label: 'How It Works', href: '/#how-it-works' },
   { label: 'Contact', href: '/#contact' },
 ]
