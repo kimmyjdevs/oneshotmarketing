@@ -6,6 +6,8 @@ export interface PortfolioSite {
   category: string
   deliverable: string
   screenshot: string
+  /** CSS translateY value for the resting (non-hovered) position, e.g. '-35%' to skip a large hero */
+  yOffset?: string
 }
 
 export const PORTFOLIO: PortfolioSite[] = [
@@ -30,11 +32,11 @@ export const PORTFOLIO: PortfolioSite[] = [
   {
     id: 'imwith88',
     name: "I'm With 88",
-    url: 'http://imwith88.com.au/',
+    url: 'https://imwith88.com/',
     tagline: 'A cause that needed a front door.',
     category: 'Advocacy',
     deliverable: 'Websites in a Week',
-    screenshot: 'https://image.thum.io/get/fullpage/http://imwith88.com.au/',
+    screenshot: 'https://image.thum.io/get/fullpage/https://imwith88.com/',
   },
   {
     id: 'thepurplearrow',
@@ -44,6 +46,7 @@ export const PORTFOLIO: PortfolioSite[] = [
     category: 'Professional Services',
     deliverable: 'Websites in a Week',
     screenshot: 'https://image.thum.io/get/fullpage/https://thepurplearrow.com.au/',
+    yOffset: '-35%',
   },
   {
     id: 'rewiredelectrical',

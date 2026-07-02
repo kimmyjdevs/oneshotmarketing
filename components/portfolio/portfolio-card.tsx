@@ -14,6 +14,7 @@ export function PortfolioCard({ site }: { site: PortfolioSite }) {
   }, [])
 
   const active = hovered && !reducedMotion
+  const restY = site.yOffset ?? '0'
 
   return (
     <article
@@ -34,7 +35,7 @@ export function PortfolioCard({ site }: { site: PortfolioSite }) {
           style={{
             height: 'auto',
             display: 'block',
-            transform: active ? 'translateY(calc(-100% + 300px))' : 'translateY(0)',
+            transform: active ? 'translateY(calc(-100% + 300px))' : `translateY(${restY})`,
             transition: active
               ? 'transform 7s ease-in-out'
               : 'transform 1.2s ease-in-out',
