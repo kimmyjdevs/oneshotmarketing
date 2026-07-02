@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 import { LogoIcon } from '@/components/logo-icon'
 
 const links = [
-  { label: 'Portfolio', href: '/#portfolio' },
+  { label: 'Portfolio', href: '/portfolio' },
   { label: 'Services', href: '/services' },
   { label: 'How It Works', href: '/#how-it-works' },
   { label: 'Contact', href: '/#contact' },

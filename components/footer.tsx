@@ -31,7 +31,7 @@ export function Footer() {
               <Link href="/#how-it-works" className="block text-[13px] text-muted hover:text-accent transition-colors">
                 How It Works
               </Link>
-              <Link href="/#case-studies" className="block text-[13px] text-muted hover:text-accent transition-colors">
+              <Link href="/portfolio" className="block text-[13px] text-muted hover:text-accent transition-colors">
                 Portfolio
               </Link>
             </div>
