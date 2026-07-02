@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     siteName: 'One Shot Marketing',
     locale: 'en_AU',
     type: 'website',
+    images: [{ url: '/images/banner-dark.png', width: 3780, height: 1890 }],
   },
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL ?? 'https://oneshotmarketing.com.au'

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { LogoIcon } from '@/components/logo-icon'
 
 export function Hero() {
   return (
@@ -24,9 +25,12 @@ export function Hero() {
       />
 
       <div className="relative max-w-6xl mx-auto px-6 py-24">
-        <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-accent mb-8 animate-fade-in">
-          Websites in a Week · Brisbane · Australia
-        </p>
+        <div className="flex items-center gap-3 mb-10 animate-fade-in">
+          <LogoIcon className="w-10 h-10 text-accent opacity-80" />
+          <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-accent">
+            Websites in a Week · Brisbane · Australia
+          </p>
+        </div>
 
         <h1 className="font-display text-heading font-bold leading-[1.02] tracking-tight mb-8 animate-fade-up"
           style={{ fontSize: 'clamp(56px, 9vw, 112px)' }}>

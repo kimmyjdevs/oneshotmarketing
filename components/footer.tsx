@@ -1,13 +1,17 @@
 import Link from 'next/link'
+import { LogoIcon } from '@/components/logo-icon'
 
 export function Footer() {
   return (
     <footer className="border-t border-teal py-10">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <Link href="/" className="flex items-baseline gap-2">
-            <span className="font-mono text-accent text-[15px] font-medium tracking-wide">ONE SHOT</span>
-            <span className="font-body text-muted text-[11px] tracking-widest uppercase">Marketing</span>
+          <Link href="/" className="flex items-center gap-3" aria-label="One Shot Marketing">
+            <LogoIcon className="w-10 h-10 text-accent shrink-0" />
+            <div className="flex flex-col leading-none">
+              <span className="font-body font-black text-accent text-[14px] tracking-[0.18em] uppercase">One Shot</span>
+              <span className="font-mono text-muted text-[9px] tracking-[0.22em] uppercase mt-0.5">Marketing</span>
+            </div>
           </Link>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-[13px] text-muted">
